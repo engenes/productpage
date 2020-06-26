@@ -1,0 +1,50 @@
+.questions {
+    display: flex;
+    justify-content: space-between;
+    @include _768{
+        justify-content: initial;
+    }
+    &__label {
+        width: 40%;
+        color: #969393;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    &__tel_value{
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        line-height: 104%;
+        letter-spacing: -0.2px;
+    }
+    &__callback{
+        color: #ff9600;
+        font-size: 12px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: flex-start;
+        width: 157px;
+        margin-top: 7px;
+        line-height: 125%;
+        
+        &:before{
+            content: url("../img/icons/update.png");
+            margin-right: 7px;
+        }
+    }
+    @include _1200{
+        &__label{
+            width: 37%;
+            font-size: 18px;
+        }
+        &__tel_value{
+            font-size: 25px;
+        }
+        &__callback{
+            width: initial;
+            font-size: 14px;
+        }
+        
+    }
+}

@@ -1,0 +1,18 @@
+.price-lower{
+    &__label {
+        color: #5c5757;
+        font-weight: 500;
+    }
+    &__value {
+        font-weight: 500;
+        color:  #261c04;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+    }
+    @include _1200{
+        display: flex;
+        &__label {
+            margin-right: 5px;
+        }
+    }
+}

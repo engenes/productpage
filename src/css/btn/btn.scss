@@ -1,0 +1,45 @@
+.btn {
+    box-shadow: 0 5px 15px 0 rgba(131, 13, 35, 0.28), inset 0 0 0 0 rgba(202, 127, 7, 0.5);
+    background: #ec9e21;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: box-shadow 0.3s;
+    border-radius: 100px;
+    text-align: center;
+    border: initial;
+    outline: initial;
+    display: block;
+    width: 100%;
+    padding: 11px;
+    cursor: pointer;
+    &:active {
+        box-shadow: 0 5px 15px 0 rgba(147, 97, 18, 0.28), inset 0px 2px 0px 0px rgba(202, 127, 7, 0.5);
+    }
+    &-cart{
+        background: #ff1541;
+        font-size: 18px;
+        display: flex;
+        padding: 6px 16px;
+        align-items: center;
+        width: initial;
+        &:before{
+            content: url("../img/icons/cart.png");
+            margin-right: 3px;
+        }
+        &-success{
+            background: #4cb351;
+        }
+    }
+    
+    @include _1200{
+        padding: 15px 21px;
+        &-cart{
+            font-size: 22px;
+            padding: 11px 41px;
+            &:before{
+                margin-right: 7px;
+            }
+        }
+    }
+}

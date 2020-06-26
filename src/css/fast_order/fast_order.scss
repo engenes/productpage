@@ -1,0 +1,50 @@
+.fast_order{
+    &__label {
+        color: #261c04;
+        font-weight: 600;
+    }
+    &__description {
+        margin-top: 11px;
+        font-size: 12px;
+        line-height: 125%;
+        padding-right: 15%;
+        color: #969393;
+    }
+    &__input_wrapper {
+        margin-top: 16px;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        background: #fff;
+        border: 1px solid #ccc;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        outline: initial;
+    }
+    @include _1200{
+        &__label {
+            font-size: 18px;
+        }
+        &__description {
+            margin-top: 12px;
+            font-size: 14px;
+            padding-right: 26%;
+        }
+        &__input{
+            font-size: 22px;
+            padding: 11px 20px;
+        }
+        &__input_wrapper {
+            margin-top: 20px;
+            display: flex;
+            position: relative;
+            .btn{
+                position: absolute;
+                right: 0;
+                width: initial;
+            }
+        }
+    }
+}

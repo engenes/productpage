@@ -1,0 +1,104 @@
+.price{
+    $near_black: #261c04;
+    height: 100px;
+    &__old{
+        color: #acabab;
+        text-decoration: line-through;
+        font-size: 14px;
+        font-weight: 600;
+        @include _992{
+            font-size: 18px;
+        }
+    }
+    &__current{
+        color: $near_black;
+        font-weight: 900;
+        font-size: 26px;
+        @include _992{
+            font-size: 34px;
+        }
+        @include _1200{
+            font-size: 40px;
+            margin-top: -4px;
+        }
+    }
+    &__delta {
+        margin-top: -8px;
+        display: flex;
+        align-items: center;
+        
+        .value{
+            font-size: 18px;
+            color: #f71741;
+            font-weight: 600;
+            display: block;
+            @include _992{
+                font-size: 20px;
+            }
+            @include _1200{
+                font-size: 18px;
+            }
+        }
+        .suffix{
+            margin-top: -3px;
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            color: $near_black;
+            @include _992{
+                font-size: 14px;
+            }
+            @include _1200{
+                margin-left: 5px;
+            }
+        }
+
+        @include _992{
+            margin-top: initial;
+        }
+        @include _1200{
+            margin-top: 3px;
+            
+            .value_wrapper {
+                display: flex;
+                align-items: flex-end;
+                line-height: 1;
+            }
+        }
+    }
+    &__discont{
+        background: url(../img/icons/скидка.svg) center center/cover;
+        font-size: 16px;
+        font-weight: 900;
+        height: 57px;
+        width: 57px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 9px;
+        @include _992{
+            font-size: 18px;
+            height: 70px;
+            width: 70px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @include _1200{
+            height: 80px;
+            width: 80px;
+            font-size: 22.13px;
+        }
+    }
+    @include _992{
+        position: relative;
+        padding-right: 90px;
+        height: 107px;
+    }
+    @include _1200{
+        padding-right: 107px;
+        height: 91px;
+    }
+}

@@ -1,0 +1,22 @@
+<svg id="Группа_5_копия" data-name="Группа 5 копия" xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fd1742;
+        stroke: #fd1742;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ff4165;
+      }
+    </style>
+  </defs>
+  <path id="Forma_1_копия_6" data-name="Forma 1 копия 6" class="cls-1" d="M1028.56,270l-11.14-6.431L1011,252.434H998.136L987,246l-11.137,6.431H963l-6.43,11.138L945.435,270v12.86L939,294l6.431,11.138V318l11.137,6.43L963,335.563h12.859L987,341.993l11.138-6.43H1011l6.43-11.14,11.13-6.43V305.134L1034.99,294l-6.43-11.138V270h0Z" transform="translate(-933 -240)"/>
+  <path id="Forma_1_копия_7" data-name="Forma 1 копия 7" class="cls-2" d="M1024.3,273.251l-9.86-5.694-5.69-9.86L960.559,321.44l5.694,9.86h11.386l9.86,5.694,9.861-5.694h11.39l5.69-9.863,9.86-5.694V304.358l5.69-9.861-5.69-9.862V273.251h0Z" transform="translate(-933 -240)"/>
+</svg>

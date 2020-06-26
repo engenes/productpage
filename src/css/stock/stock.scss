@@ -1,0 +1,18 @@
+.stock{
+    padding-left: 24px;
+    font-weight: 500;
+    color: #5c5757;
+    position: relative;
+    display: inline-block;
+    &-many:before {
+        content: url(../img/icons/success.png);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 2px;
+    }
+    @include _1200{
+        padding-left: 25px;
+    }
+}

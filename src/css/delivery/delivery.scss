@@ -1,0 +1,71 @@
+.delivery{
+    @include _768 {
+        width: 260px;
+    }
+    @include _992 {
+        width: 100%;
+    }
+    &__region{
+        font-weight: 600;
+        @include _768 {
+            font-size: 16px;
+        }
+    }
+    &__label_region {
+        color: #969393;
+    }
+    &__period {
+        margin-top: 1px;
+        font-weight: 500;
+        font-size: 12px;
+        width: 100%;
+        color: #969393;
+
+        td {
+            padding-top: 9px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed #000000;
+            
+        }
+    }
+    
+    &__method {
+        width: 123px;
+    }
+    &__points {
+        color: #2a2222;
+        width: 107px;
+        display: block;
+        background: url(../img/icons/newtab.png) 73px 17px no-repeat;
+    }
+    &__price {
+        text-align: right;
+        color: #261c04;
+    }
+    @include _768 {
+        &__region {
+            font-size: 14px;
+        }
+    }
+    @include _1200 {
+        &__period {
+            margin-top: 19px;
+            font-size: 14px;
+            td {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+        }
+        &__region {
+            font-size: 18px;
+        }
+        &__method {
+            width: 173px;
+        }
+        &__points{
+            width: initial;
+            background-position: 136px 5px;
+        }
+    }
+    
+}

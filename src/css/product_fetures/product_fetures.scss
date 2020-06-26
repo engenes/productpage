@@ -1,0 +1,56 @@
+.product_fetures {
+    display: flex;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    padding: 0 14px;
+    align-items: center;
+    height: 70px;
+    
+    &__item{
+        display: inline-flex;
+        font-size: 12px;
+        font-weight: 600;
+        color: #171000;
+        line-height: 110%;
+        align-items: center;
+        
+        &:before{
+            margin-right: 10px;
+        }
+        &-pay{
+            width: 56%;
+            &:before{
+                content: url("../img/icons/кошелек.svg");
+            }
+            @include _768{
+                width: 54%;
+            }
+            @include _992{
+                width: 52%;
+            }
+        }
+
+        &-cansel:before{
+            content: url("../img/icons/календарь.svg");
+        }
+        @include _768{
+            font-size: 14px;
+        }
+    }
+    @include _1200{
+        height: 92px;
+        padding: 0 25px;
+        &__item{
+            &-pay{
+                width: 59%;
+                padding-right: 35px;
+            }
+            &:before{
+                margin-right: 21px;
+            }
+        }
+    }
+}
